@@ -4,15 +4,17 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class ProcesadorCorrectorTexto implements CorrectorTexto {
+public class ProcesadorCorrectorTexto implements CorrectorTexto, ProcesadorTexto{
 
 
 	private List<String> texto = new ArrayList<>();
 	
+	@Override
 	public void nueva (String palabra) {
 		texto.add(palabra);
 	}
 	
+	@Override
 	public String texto () {
 		return texto.stream().collect(Collectors.joining(" "));
 	}
