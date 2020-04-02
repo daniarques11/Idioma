@@ -4,7 +4,7 @@
 
 _Autor de gran parte del código: https://github.com/dfleta_
 
-- Este código contiene:
+**Este código contiene:**
 - Tipos enumerados
 - Colecciones
 - Streams
