@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class ProcesadorCorrectorTexto {
+public class ProcesadorCorrectorTexto implements CorrectorTexto {
 
 
 	private List<String> texto = new ArrayList<>();
@@ -17,6 +17,7 @@ public class ProcesadorCorrectorTexto {
 		return texto.stream().collect(Collectors.joining(" "));
 	}
 	
+	@Override
 	public boolean correcto (Idioma idioma) {
 		for (String palabra: texto) {
 			if (! idioma.diccionario.contains(palabra.toLowerCase())) {
