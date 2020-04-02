@@ -23,13 +23,13 @@ public class TestProcesadorTexto {
 	@Test
 	public void test_con_idioma() {
 		
-		ProcesadorCorrectorTexto procesador = new ProcesadorCorrectorTexto();
+		ProcesadorCorrectorTexto procesador_con_idioma = new ProcesadorCorrectorTexto();
 		
-		procesador.nueva("Tengo");
-		procesador.nueva("hambre");
+		procesador_con_idioma.nueva("Tengo");
+		procesador_con_idioma.nueva("hambre");
 		
-		assertEquals("Tengo hambre", procesador.texto());
+		assertEquals("Tengo hambre", procesador_con_idioma.texto());
 		
-		assertTrue(procesador.correcto(Idioma.ES));
+		assertTrue(procesador_con_idioma.correcto(Idioma.ES));
 	}
 }
