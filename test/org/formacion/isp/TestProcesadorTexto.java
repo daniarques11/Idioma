@@ -10,6 +10,7 @@ public class TestProcesadorTexto {
 	@Test
 	public void test_simple() {
 		
+		// Esta instancia no contiene las características de CorrectorTexto
 		ProcesadorTexto procesador = new ProcesadorCorrectorTexto();
 		
 		procesador.nueva("No");
